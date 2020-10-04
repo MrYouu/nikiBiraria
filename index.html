@@ -1,0 +1,200 @@
+<!--The HTML code is property to Mr. You (Kristiyan Valchev) and can only be viewed-->
+<!--If you want to use part of the code, please first contact me: mr.youdevelopment@gmail.com-->
+
+<html id = "html">
+    <head>
+        <link href = "https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel = "stylesheet">
+        <link type = "text/css" rel = "stylesheet" href = "Files/Style.css">
+        <link rel = "icon" href = "Images/Logo.png" type = "image" sizes = "16x16">
+
+        <meta charset = "utf-8">
+        <meta name = "description" content = "Разположена в близост до кея, с гледка към залеза, посетете ни с приятели на по чаша свежа бира.">
+        <meta name = "keywords" content = "Бира, Бирария, Кея, Русе, България, Beer, Bar, Ruse, Bulgariq">
+        <meta name = "author" content = "Kristiyan Valchev">
+        <meta name = "viewport" content = "width = device-width, user-scalable = no, initial-scale = 1">
+        
+        <script type = "text/javascript" src = "Files/Functions.js"></script>
+        <script src = "https://kit.fontawesome.com/190623e0b3.js" crossorigin = "anonymous"></script>
+
+        <title>Бирария</title>
+    </head>
+
+    <body id = "body">
+        <!-- #region Loading -->
+        <img src = "Images/Thumbnails/Main.png" style = "display: none;">
+
+        <div class = "Loader">
+			<div class="obj"></div>
+			<div class="obj"></div>
+			<div class="obj"></div>
+			<div class="obj"></div>
+			<div class="obj"></div>
+			<div class="obj"></div>
+			<div class="obj"></div>
+			<div class="obj"></div>
+        </div>
+
+        <script>
+            window.addEventListener("load", function ()
+			{
+				const Loader = document.querySelector(".Loader")
+				Loader.className += " hidden";
+            });
+
+            window.scroll(
+            {
+                top: 0,
+                left: 0,
+                behavior: 'smooth'
+            });
+		</script>
+        <!-- #endregion Loading -->
+
+        <div class = "topBar">
+            <a href = "index.html" class = "Logo"><div></div> Бирария</a>
+            <a href = "#">Меню</a>
+            <a href = "#">За нас</a>
+            <a href = "index.html" class = "Active">Начало</a>
+
+            <a onclick = "openSideMenu()" class = "threeLineButton">
+                <div></div>
+                <div></div>
+                <div></div>
+            </a>
+        </div>
+
+        <div class = "siteMenu" id = "sideMenu">
+            <a onclick = "closeSideMenu()" class = "closeButton">
+                <div></div>
+                <div></div>
+            </a>
+
+            <a href = "index.html" class = "Active"><div></div> Начало <div></div></a>
+            <a href = "#"><div></div> За нас <div></div></a>
+            <a href = "#"><div></div> Меню <div></div></a>
+        </div>
+
+        <img src = "Images/mainPageImage.png" alt = "Main page Image" class = "mainImage">
+        <img src = "Images/decorationPluses.png" alt = "Decoration of pluses" class = "mainImageDecorationPlusses">
+        <div class = "mainImageDecorationSercleHolder">
+            <div class = "mainImageDecorationSercle"></div>
+            <div class = "mainImageDecorationSercleCross"></div>
+        </div>
+        <h1 class = "mainTitle">Бирария</h1>
+        <p class = "mainText">
+            Разположена в близост до кея, с гледка към залеза и свежа глъдка
+            хладна бира
+        </p>
+        <a href = "#" class = "mainButton">Нашето меню</a>
+
+        <div class = "pageContent">
+            <div class = "Section forUs">
+                <div class = "sectionMainDecoration">
+                    <div class = "sectionMainDecorationMainLine"></div>
+                    <div class = "sectionMainDecorationCross"></div>
+                    <div class = "sectionMainDecorationCross"></div>
+                    <div class = "sectionMainDecorationMainSercle"></div>
+                    <div class = "sectionMainDecorationCrossSercle"></div>
+                </div>
+
+                <h1 class = "sectionTitle">За нас</h1>
+
+                <img src = "Images/Interior.jpg" alt = "Interior" class = "sectionCroppedImage">
+                <div class = "sectionBackBox"></div>
+
+                <p class = "sectionTextAfterCroppedImage">
+                    Заповядайте при нас на по чаша бира с чипс. Седнете вътре
+                    в уютна атмосфера или навън с приятели, наблюдавайки залеза.
+                </p>
+
+                <a href = "#" class = "sectionButton">Виж повече</a>
+            </div>
+
+            <div class = "Section">
+                <div class = "sectionMainDecoration">
+                    <div class = "sectionMainDecorationMainLine"></div>
+                    <div class = "sectionMainDecorationCross"></div>
+                    <div class = "sectionMainDecorationCross"></div>
+                    <div class = "sectionMainDecorationMainSercle"></div>
+                    <div class = "sectionMainDecorationCrossSercle"></div>
+                </div>
+
+                <h1 class = "sectionTitle">Меню</h1>
+                <p class = "sectionText">
+                    Разгледаите едни от най-популярните ни бирите които предлагаме и
+                    изберете нещо по ваш вкус.
+                </p>
+
+                <img src = "Images/decorationPluses02.png" alt = "Decoration of pluses" class = "sectionDecorationPlusses">
+
+                <div class = "sectionList">
+                    <div class = "listBlock">
+                        <div class = "listImageHolder"><img src = "Images/Menu/Drink/beerBlank.png" alt = "Drink image"></div>
+                        <p>Име на бирата</p>
+                    </div>
+
+                    <div class = "listBlock">
+                        <div class = "listImageHolder"><img src = "Images/Menu/Drink/beerBlank.png" alt = "Drink image"></div>
+                        <p>Име на бирата</p>
+                    </div>
+
+                    <div class = "listBlock">
+                        <div class = "listImageHolder"><img src = "Images/Menu/Drink/beerBlank.png" alt = "Drink image"></div>
+                        <p>Име на бирата</p>
+                    </div>
+
+                    <div class = "listBlock">
+                        <div class = "listImageHolder"><img src = "Images/Menu/Drink/beerBlank.png" alt = "Drink image"></div>
+                        <p>Име на бирата</p>
+                    </div>
+
+                    <div class = "listBlock">
+                        <div class = "listImageHolder"><img src = "Images/Menu/Drink/beerBlank.png" alt = "Drink image"></div>
+                        <p>Име на бирата</p>
+                    </div>
+
+                    <div class = "listBlock">
+                        <div class = "listImageHolder"><img src = "Images/Menu/Drink/beerBlank.png" alt = "Drink image"></div>
+                        <p>Име на бирата</p>
+                    </div>
+
+                    <div class = "listBlock">
+                        <div class = "listImageHolder"><img src = "Images/Menu/Drink/beerBlank.png" alt = "Drink image"></div>
+                        <p>Име на бирата</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class = "Section Contacts">
+                <div class = "sectionMainDecoration">
+                    <div class = "sectionMainDecorationMainLine"></div>
+                    <div class = "sectionMainDecorationCross"></div>
+                    <div class = "sectionMainDecorationCross"></div>
+                    <div class = "sectionMainDecorationMainSercle"></div>
+                    <div class = "sectionMainDecorationCrossSercle"></div>
+                </div>
+                <h1 class = "sectionTitle">Контакти</h1>
+                <p class = "sectionText">
+                    Обадете ни се при нужда. Можете да ни посетите Facebook страницатa или да
+                    ни пишете в Messenger.
+                </p>
+                <div class = "mainContactsList">
+                    <a href = "tel: #" class = "P"><i class = "fas fa-phone-alt"></i></a>
+                    <a href = "#" class = "F"  target = "_blank"><i class = "fab fa-facebook-f"></i></a>
+                    <a href = "#" class = "M" target = "_blank"><i class = "fab fa-facebook-messenger"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class = "bottomBar">
+            <div class = "directionButton N"><a href = "index.html" class = "Active">Начало</a></div>
+            <div class = "directionButton Z"><a href = "#">За нас</a></div>
+            <div class = "directionButton M"><a href = "#">Меню</a></div>
+
+            <p class = "Credits">
+                <powerd>Site powered by <company>Mr. You Development</company>.</powerd>
+                <managed> Managed by <my>Kristiyan Valchecv</my></managed>
+            </p>
+        </div>
+    </body>
+</html>
