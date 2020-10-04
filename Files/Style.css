@@ -391,6 +391,14 @@ body
 /*#endregion Side menu */
 
 /*#region Main Things */
+.mainSideImagesHolder
+{
+    position: absolute;
+    width: 100%;
+    height: 1100px;
+    overflow: hidden;
+}
+
 .mainImage
 {
     float: right;
